@@ -1,9 +1,8 @@
 import telebot
 from telebot.types import Message
-import random
+import random,os
 
-API_TOKEN = os.getenv("BOT_TOKEN")
-
+API_TOKEN = os.environ['BOT_TOKEN']
 
 bot = telebot.TeleBot(API_TOKEN)
 smiles=['☹️',
@@ -14,7 +13,6 @@ smiles=['☹️',
 '😟',
 '😣',
 '😖']
-
 
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['start'])
