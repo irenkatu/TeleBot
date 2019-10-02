@@ -2,7 +2,8 @@ import telebot
 from telebot.types import Message
 import random,os
 
-API_TOKEN = os.environ['BOT_TOKEN']
+API_TOKEN = os.environ(BOT_TOKEN)
+
 
 bot = telebot.TeleBot(API_TOKEN)
 smiles=['☹️',
